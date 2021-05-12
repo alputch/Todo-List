@@ -1,0 +1,55 @@
+.taskItem{
+  padding-left: 10px;
+  height: 30px;
+  width: 300px;
+  border: 2px solid silver;
+  margin-bottom: 10px;
+  display: flex;
+  border: 1.4px solid rgb(46, 48, 54);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(46, 48, 54);
+}
+
+.taskItem:not(.done):hover{
+  cursor: pointer;
+  background-color: rgb(254, 254, 226);
+}
+
+.item{
+  flex: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.taskItemText{
+}
+
+.taskItemDone{
+  max-width: 15px;
+  max-height: 15px;
+  margin-left: 10px;
+}
+
+.done{
+  background-color: #DCDCDC;
+  box-shadow: none;
+}
+
+.taskDelete{
+  flex: 1;
+  max-width: 15px;
+  height: 100%;
+  margin-right: 10px;
+  color: red;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskDelete:hover{
+  color: rgb(46, 48, 54);
+  cursor: pointer;
+}
